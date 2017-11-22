@@ -102,6 +102,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
+        
         <Slide transition={["slide"]} bgColor="tertiary">
           <Heading size={4} textColor="secondary" caps>Rammeverk og verktøy</Heading>
           <List>
@@ -128,13 +129,13 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide"]} bgColor="tertiary">
           <Heading size={4} textColor="secondary" caps>Utfordringer</Heading>
           <List>
-            <ListItem textSize={38}>Design utfordringer.</ListItem>
-            <ListItem  textSize={38}>Vi hadde ingen plan fra begynnelsen
+            <ListItem textSize={38}>Design</ListItem>
+            <ListItem  textSize={38}>Ingen konkret plan fra begynnelsen
               <List>
-              <ListItem textSize={38} style={{marginLeft: '45px'}}>Fikk komplisert state og data flow etterhvert => introduserte Redux og Flow</ListItem>
+              <ListItem textSize={38} style={{marginLeft: '45px'}}>Komplisert state og dataflyt => Redux og Flow</ListItem>
               </List>
             </ListItem>
-            <ListItem textSize={38}>Man merker at React Native ikke er i versjon 1.0 av og til.</ListItem>         
+            <ListItem textSize={38}>React Native !== 1.0</ListItem>         
           </List>
         </Slide>
 
