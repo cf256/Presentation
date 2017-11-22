@@ -7,8 +7,7 @@ const theme = createTheme(
         tertiary: "#A0D1CA"
     },
     {
-        header: "Brush Up",
-        primary: "Helvetica",
+        primary: "Montserrat",
         secondary: { name: "Droid Serif", googleFont: true, styles: ["400", "700i"] }
     }
 );

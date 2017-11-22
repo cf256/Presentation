@@ -1,16 +1,7 @@
 // Import React
 import React from "react";
-import styled, { injectGlobal  } from 'styled-components';
+import styled from 'styled-components';
 
-// Inject font
-injectGlobal`
-@font-face {
-  font-family: 'Brush Up';
-  src: url(${require('../assets/brushup.woff2')});
-  font-weight: normal;
-  font-style: normal;
-}
-`
 
 
 // Import Spectacle Core tags
@@ -47,7 +38,7 @@ export default class Presentation extends React.Component {
     return (
       <Deck contentWidth={1400} transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
         <Slide transition={["zoom"]} bgColor="primary">
-          <Heading textFont="Brush Up" size={1} lineHeight={1} textColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
           #Ruter Mobilitetsapp
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" textSize={32} bold italic>
@@ -83,12 +74,12 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={6} textColor="secondary" caps>React Native komponenter</Heading>
+          <Heading size={4} textColor="secondary" caps>React Native komponenter</Heading>
           <Image style={{border: '3px solid #A0D1CA'}} src={images.code} />
         </Slide>
 
         <Slide transition={["slide"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Hot-reloading</Heading>
+          <Heading size={4} textColor="secondary" caps>Hot-reloading</Heading>
           <Image style={{border: '3px solid #A0D1CA'}} src="https://raw.githubusercontent.com/AlanFoster/react-native-presentation/master/assets/hot-reload.gif" />
         </Slide>
 
@@ -97,18 +88,63 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["slide"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Hvordan funker React Native?</Heading>
+          <Heading size={4} textColor="secondary" caps>Hvordan funker React Native?</Heading>
           <Image width="1100px" style={{border: '3px solid #A0D1CA'}} src={images.diagram} />
         </Slide>
 
         <Slide transition={["slide"]} bgColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Tips</Heading>
+          <Heading size={4} textColor="secondary" caps>Tips</Heading>
           <List>
             <ListItem textSize={38}>Bruk shouldComponentUpdate</ListItem>
             <ListItem textSize={38}>Bruk keys hvis du rendrer liste med komponenter</ListItem>
             <ListItem textSize={38}>Bruk native komponenter f. eks Native Navigation istedet for JS basert router</ListItem>
             <ListItem textSize={38}>Lag dine egne native komponenter hvis ytelse er viktigst</ListItem>
           </List>
+        </Slide>
+
+        <Slide transition={["slide"]} bgColor="tertiary">
+          <Heading size={4} textColor="secondary" caps>Rammeverk og verktøy</Heading>
+          <List>
+            <ListItem textSize={38}>Redux</ListItem>
+            <ListItem textSize={38}>AirBnB Maps</ListItem>
+            <ListItem textSize={38}>UI Kitten</ListItem>
+            <ListItem textSize={38}>React Native Devtools med Redux Devtools</ListItem>
+            <ListItem textSize={38}>React Native Calendar</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={["slide"]} bgColor="tertiary">
+          <Heading size={4} textColor="secondary" caps>APIer</Heading>
+          <List>
+            <ListItem textSize={38}>Ruter Reise</ListItem>
+            <ListItem textSize={38}>Statens Vegvesen</ListItem>
+            <ListItem textSize={38}>Bysykkel</ListItem>
+            <ListItem textSize={38}>Google Maps</ListItem>
+            <ListItem textSize={38}>Uber</ListItem>
+            <ListItem textSize={38}>Ruter NextGen</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={["slide"]} bgColor="tertiary">
+          <Heading size={4} textColor="secondary" caps>Utfordringer</Heading>
+          <List>
+            <ListItem textSize={38}>Design utfordringer.</ListItem>
+            <ListItem  textSize={38}>Vi hadde ingen plan fra begynnelsen
+              <List>
+              <ListItem textSize={38} style={{marginLeft: '45px'}}>Fikk komplisert state og data flow etterhvert => introduserte Redux og Flow</ListItem>
+              </List>
+            </ListItem>
+            <ListItem textSize={38}>Man merker at React Native ikke er i versjon 1.0 av og til.</ListItem>         
+          </List>
+        </Slide>
+
+        <Slide transition={["slide"]} bgColor="secondary">
+          <Heading size={4} textColor="primary" caps>Demo og snart 🍕</Heading>
+        </Slide>
+
+
+        <Slide transition={["slide"]} bgColor="primary">
+          <Heading size={1} textColor="secondary" caps>Takk</Heading>
         </Slide>
 
       </Deck>
