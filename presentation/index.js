@@ -28,8 +28,8 @@ import theme from "./theme/knowitTheme"
 require("normalize.css");
 
 const images = {
-  code: require('../assets/code.jpg'),
-  diagram: require('../assets/reactdiagram.png'),
+  code: 'https://raw.githubusercontent.com/onurhb/Presentation/master/assets/code.jpg',
+  diagram: 'https://raw.githubusercontent.com/onurhb/Presentation/master/assets/reactdiagram.png',
 };
 
 
